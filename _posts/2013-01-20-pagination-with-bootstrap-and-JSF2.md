@@ -10,15 +10,15 @@ author: Fabian Stäber
 Overview
 --------
 
-This post shows how to use Twitter Bootstrap's
+This post shows how to implement Twitter Bootstrap's
 [paginator](http://twitter.github.com/bootstrap/components.html#pagination)
 as a composite component in
 [JSF 2](http://docs.oracle.com/javaee/6/tutorial/doc/bnaph.html)-based applications.
 
 <img src="{{page.image}}"/>
 
-The composite component was implemented as part of MyMAM.
-Feel free to copy the files listed at the end of the post
+The composite component was developed as part of MyMAM.
+Feel free to copy the files listed at the end of this post
 and use them in your own project.
 
 Including the Paginator in an XHTML-Facelet
@@ -40,8 +40,8 @@ The paginator is used as follows:
     <mymam:paginator
             paginatable="#{yourPaginatableBean}"
             size="9"
-            prevLabel="#{i18n['paginator.prev']}"
-            nextLabel="#{i18n['paginator.next']}"/>
+            prevLabel="prev"
+            nextLabel="next"/>
     </html>
 
 An example can be found in MyMAM's [index.xhtml](https://github.com/mymam/mymam/blob/master/mymam-server/src/main/webapp/index.bootstrap.xhtml).
